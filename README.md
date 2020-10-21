@@ -4,6 +4,8 @@ This project is a sample service using [ktor](https://ktor.io/) (with Netty) and
 dependency injection. The ultimate goal is to incorporate a similar sample service into 
 [cautious-engine](https://github.com/vitdebacco/cautious-engine) to test the performance of various frameworks.
 
+This project was initialized with IntelliJ's Ktor plugin. 
+
 ### Build and Run
 1. `docker-compose up`
 2. `./gradlew run`
@@ -41,3 +43,13 @@ curl -X PUT 'http://localhost:8080/api/v1/offerings/{id}' -H 'Content-Type: appl
 ```
 curl -X DELETE 'http://localhost:8080/api/v1/offerings/{id}' | jq
 ```
+
+### Helpful Links
+The following were helpful in putting this together.
+
+[Ktor](https://ktor.io/)
+
+[Kotlin with Ktor](https://www.baeldung.com/kotlin-ktor)
+
+[Tutorial: Simple Kotlin REST API with Ktor, Exposed and Kodein](https://stefangaller.at/app-development/kotlin/ktor-rest-api-exposed/)
+
